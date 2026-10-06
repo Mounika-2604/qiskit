@@ -231,8 +231,11 @@ class Statevector(QuantumState, TolerancesMixin):
             drawer_args: Arguments to be passed directly to the relevant drawing
                 function or constructor (`TextMatrix()`, `array_to_latex()`,
                 `plot_state_qsphere()`, `plot_state_hinton()` or `plot_bloch_multivector()`).
-                See the relevant function under `qiskit.visualization` for that function's
-                documentation.
+                For ``output="latex"`` and ``output="latex_source"``, keyword arguments
+                such as ``max_size`` (maximum number of ket terms displayed before
+                truncating with an ellipsis; default is 12), ``prefix``, and ``decimals``
+                can be passed. See the relevant function under `qiskit.visualization`
+                for that function's documentation.
 
         Returns:
             :class:`matplotlib.Figure` or :class:`str` or
